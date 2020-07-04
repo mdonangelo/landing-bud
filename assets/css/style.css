@@ -1,0 +1,272 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+    max-width: 100%;
+}
+
+/* BASIC STRUCTURE */
+.global {
+    margin:0 auto;
+    width: 100%;
+    max-width:1300px;
+}
+
+.flex-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.vertical-center{
+    align-items: center;
+}
+
+.yellow-line {
+    width:10%;
+    height:2px;
+    display: block;
+    background-color: #F5E94E;
+    margin: 30px 0;
+}
+
+/* HEADER */
+header { 
+    background-color: #0093DA;
+    padding: 60px 0;
+}
+
+#sub-info-head {
+    padding:90px 0;
+}
+
+#principal-menu li { 
+    display:inline-block;
+    padding:0 20px;
+    text-transform: uppercase;
+}
+
+#principal-menu li:first-child {
+     padding-left: 0;
+}
+
+#principal-menu li:last-child {
+    padding-right: 0;
+}
+
+ #principal-menu li a {
+     padding:15px 0;
+     text-decoration: none;
+     color:#fff;
+     transition: all 0.3s ease;
+ }
+
+ #principal-menu li a:hover {
+     color: #F5E94E;
+ }
+
+ #principal-menu li .login {
+     border:2px solid #F5E94E;
+     border-radius: 40px;
+     padding:15px 50px;
+ }
+
+ #principal-menu li .login:hover {
+     color:#0093DA;
+     background-color: #F5E94E;
+ }
+
+header h1 {
+     font-weight: 400;
+     font-size: 3em;
+     color: #fff;
+ }
+
+header h2 {
+     font-size:1.2em;
+     color:#fff;
+     margin-bottom: 50px;
+ }
+
+.bud-image {
+    text-align: center;
+}
+
+form input {
+    padding: 20px 10px;
+    text-align: center;
+    border: 2px solid #E5E5E5;
+    border-radius: 40px;
+}
+
+form input[type=submit] {
+    color:#fff;
+    background-color: #F5E838;
+    padding:12px;
+    border:0;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form input[type=submit]:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.input-left {
+    margin-right: 10px;
+}
+.input-right {
+    margin-left: 10px;
+}
+
+/* PARTNERS */
+#partners .global{
+    height:180px;
+}
+
+#partners h2 {
+    color:#4160B6;
+    font-size: 2em;
+    margin-bottom: 60px;
+}
+
+
+.partner-box {
+    width:100%;
+    min-height: 180px;
+    padding:60px 0;
+    border-radius: 30px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.30);
+    text-align: center;
+    height: auto;
+    background-color: #fff;
+    top:-60px;
+    position: relative;
+}
+
+/* NOSSO MODELO */
+#nosso-modelo {
+    background-color: #4160B6;
+    padding:120px 0 60px 0;
+    text-align:center;
+}
+
+#nosso-modelo h2 {
+    font-size: 2em;
+    color: #F5E838;
+    margin-bottom: 60px;
+}
+
+.content-model {
+    padding:0 20px;
+    color:#fff;
+    
+}
+
+.content-model:first-child {
+    padding-left: 0;
+}
+
+.content-model:last-child {
+    padding-right: 0;
+}
+
+.content-model img, .content-model p {
+    display: block;
+}
+
+.content-model img {
+    margin: 0 auto;
+}
+
+.content-model h3 {
+    border: 1px solid #F5E838;
+    display:inline-block;
+    font-weight: 700;
+    margin:20px 0;
+    padding:10px 20px;
+    border-radius: 50px;
+}
+
+/* NOSSO SOFTWARE */
+#nosso-software {
+    background-color: #4160B6;
+    color: #fff;
+}
+
+#nosso-software h2 {
+    padding-top: 150px;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+#nosso-software p {
+    line-height: 150%;
+    font-size:1.2em;
+    padding-bottom:60px;
+}
+
+.computer-image {
+    position:relative;
+    top:150px;
+}
+.computer-image img {
+    width:100%;
+}
