@@ -51,10 +51,18 @@ img {
 }
 
 /* BASIC STRUCTURE */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior:smooth
+}
+
 .global {
     margin:0 auto;
     width: 100%;
-    max-width:1300px;
+    max-width:1200px;
+    padding:0 50px;
 }
 
 .flex-row {
@@ -89,8 +97,13 @@ header {
     padding: 60px 0;
 }
 
+#menu-script {
+    display: none;
+    font-size:1.3em;
+}
+
 #sub-info-head {
-    padding:90px 0;
+    padding:90px 50px;
 }
 
 #principal-menu li { 
@@ -100,7 +113,7 @@ header {
 }
 
 #principal-menu li:first-child {
-     padding-left: 0;
+    padding-left: 0;
 }
 
 #principal-menu li:last-child {
@@ -108,38 +121,44 @@ header {
 }
 
  #principal-menu li a {
-     padding:15px 0;
-     text-decoration: none;
-     color:#fff;
-     transition: all 0.3s ease;
+    padding:15px 0;
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.3s ease;
  }
 
  #principal-menu li a:hover {
-     color: #F5E94E;
+    color: #F5E94E;
  }
 
  #principal-menu li .login {
-     border:2px solid #F5E94E;
-     border-radius: 40px;
-     padding:15px 50px;
+    border:2px solid #F5E94E;
+    border-radius: 40px;
+    padding:15px 50px;
  }
 
  #principal-menu li .login:hover {
      color:#0093DA;
      background-color: #F5E94E;
- }
+}
 
 header h1 {
-     font-weight: 400;
-     font-size: 3em;
-     color: #fff;
+    font-weight: 400;
+    font-size: 3em;
+    color: #fff;
  }
 
 header h2 {
-     font-size:1.2em;
-     color:#fff;
-     margin-bottom: 50px;
- }
+    font-size:1.2em;
+    color:#fff;
+    margin-bottom: 50px;
+    line-height: 150%;
+
+}
+
+.description {
+    padding-right:50px;
+}
 
 .bud-image {
     text-align: center;
@@ -150,9 +169,16 @@ form input {
     text-align: center;
     border: 2px solid #E5E5E5;
     border-radius: 40px;
+    outline : none;
+}
+
+form input:focus {
+    box-shadow: 0 0 1px 1px #F5E838;
 }
 
 form input[type=submit] {
+    width: 100%;
+    max-width: 400px;
     color:#fff;
     background-color: #F5E838;
     padding:12px;
@@ -162,6 +188,8 @@ form input[type=submit] {
     cursor: pointer;
     transition: all 0.3s ease;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    word-break: break-word;
+    white-space: normal;
 }
 
 form input[type=submit]:hover {
@@ -171,9 +199,11 @@ form input[type=submit]:hover {
 
 .input-left {
     margin-right: 10px;
+    width: 90%;
 }
 .input-right {
     margin-left: 10px;
+    width: 90%;
 }
 
 /* PARTNERS */
@@ -191,7 +221,7 @@ form input[type=submit]:hover {
 .partner-box {
     width:100%;
     min-height: 180px;
-    padding:60px 0;
+    padding:60px 5%;
     border-radius: 30px;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.30);
     text-align: center;
@@ -201,10 +231,30 @@ form input[type=submit]:hover {
     position: relative;
 }
 
+.partner-slider img{
+    width:auto;
+}
+
+.tns-outer [aria-controls]{ 
+    padding:5px; 
+    border-radius:100%;
+    margin:10px; 
+    background-color:#f4f4f4; 
+    border:1px solid #e8e8e8;
+}
+
+.tns-nav-active { 
+    border-color: #808080 !important;
+}
+
+.tns-outer {
+    text-align:center;
+}
+
 /* NOSSO MODELO */
 #nosso-modelo {
     background-color: #4160B6;
-    padding:120px 0 60px 0;
+    padding:180px 0 60px 0;
     text-align:center;
 }
 
@@ -230,6 +280,10 @@ form input[type=submit]:hover {
 
 .content-model img, .content-model p {
     display: block;
+}
+
+.content-model p {
+    line-height: 150%;
 }
 
 .content-model img {
@@ -269,4 +323,172 @@ form input[type=submit]:hover {
 }
 .computer-image img {
     width:100%;
+}
+
+/* CONTATO */
+#contato {
+    padding:180px 0 60px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    color:#4160B6;
+    font-size: 2em;
+    margin-bottom: 60px;
+}
+
+.left-form, .right-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.left-form {
+    margin-right: 20px;
+}
+
+.right-form {
+    margin-left: 20px;
+}
+
+.left-form input, .right-form input {
+    width:90%;
+    display: block;
+    margin:15px 0;
+}
+
+#contato input[type=submit] {
+    margin:20px 0 0 0;
+    padding:20px 40px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #F5E838;
+    color: #4160B6;
+    padding:60px 0;
+}
+
+footer .flex-row {
+    align-items: flex-end;
+}
+
+.content-footer:last-child {
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4160B6;
+}
+
+@media(max-width: 1000px) {
+    nav {
+        position:relative;
+        flex:1;
+    }
+    #menu-script {
+        margin:1em 0;
+        width:100% !important;
+        text-align: right;
+        display: block;
+    }
+
+    .expand{
+        display: block !important;
+        position: absolute;
+        width:100%;
+        min-width: 250px;
+        right:0;
+        background:#4160B6;
+        padding:0 0 20px 0;
+    }
+
+    #principal-menu {
+        display: none;
+    }
+
+    #principal-menu li {
+        display: block;
+        padding:20px !important;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    .description {
+        padding-right: 0;
+    }
+
+    .bud-image {
+        padding-top:60px;
+    }
+
+    #welcome-head.flex-row {
+        flex-direction: row;
+    }
+
+    form.flex-row {
+        flex-direction: row;
+    }
+
+    .content-model {
+        padding-bottom: 60px;
+    }
+
+    .computer-image {
+        position: static;
+    }
+
+    .content-software h2{
+        padding-top: 0 !important;
+    }
+
+    .left-form, .right-form {
+        margin:0;
+    }
+
+    .left-form input, .right-form input {
+        margin:15px auto;
+    }
+
+    #contato {
+        padding: 60px 0 60px 0;
+    }
+
+    footer .flex-row {
+        align-items: flex-start;
+    }
+    .content-footer {
+        padding:10px 0;
+    }
+    .content-footer img {
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    header h1, #nosso-software h2 {
+        font-size:2.2em;
+    }
+    #partners h2, #contato h2 {
+        font-size:1.5em;
+        margin-bottom:30px;
+    }
+
+    form.flex-row {
+        flex-direction: column;
+    }
+    .input-left{
+        width: 100%;
+        margin:0;
+    }
+    
+    .input-right {
+        width: 100%;
+        margin:20px 0 0 0;
+        padding:20px 0 !important;
+    }
+
 }

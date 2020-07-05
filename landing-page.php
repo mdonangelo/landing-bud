@@ -24,6 +24,7 @@
     <meta name="msapplication-TileColor" content="#4160B6">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -34,10 +35,12 @@
             <img src="./assets/images/logo-bud-da-weme.svg" alt="Logo do BuD feito pela weme">
 
             <nav>
+                <a href="javascript:void(0);" id="menu-script"><i class="fas fa-stream"></i> Menu</a>
+
                 <ul id="principal-menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#" class="login">Login</a></li>
+                    <li><a href="#nosso-modelo">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="http://getbud.co/app/" class="login">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,12 +72,22 @@
             <div class="partner-box">
                 <h2>Quem está avançando na estratégia com a gente</h2>
 
-                <div class="flex-row">
-                    <img src="./assets/images/partners/cocal.png" alt="Logo da cocal">
-                    <img src="./assets/images/partners/dhl.png" alt="Logo da dhl">
-                    <img src="./assets/images/partners/starrett.png" alt="Logo da starrett">
-                    <img src="./assets/images/partners/ultragaz.png" alt="Logo da ultragaz">
-                    <img src="./assets/images/partners/usina-da-pedra.png" alt="Logo da usina da pedra">
+                <div class="partner-slider">
+                    <div class="info-partner">
+                        <img src="./assets/images/partners/cocal.png" alt="Logo da cocal">
+                    </div>
+                    <div class="info-partner">
+                        <img src="./assets/images/partners/dhl.png" alt="Logo da dhl">
+                    </div>
+                    <div class="info-partner">
+                        <img src="./assets/images/partners/starrett.png" alt="Logo da starrett">
+                    </div>
+                    <div class="info-partner">
+                        <img src="./assets/images/partners/ultragaz.png" alt="Logo da ultragaz">
+                    </div>
+                    <div class="info-partner">
+                        <img src="./assets/images/partners/usina-da-pedra.png" alt="Logo da usina da pedra">
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,15 +145,15 @@
             <form action="" method="POST">
                 <div class="flex-row">
                     <div class="left-form">
-                        <input type="text" name="nome" placeholder="Nome">
+                        <input type="text" name="nome" placeholder="NOME">
                         <input type="text" name="telefone" placeholder="(00) 00000-0000">
-                        <input type="text" name="cargo" placeholder="Cargo">
+                        <input type="text" name="cargo" placeholder="CARGO">
                     </div>
 
                     <div class="right-form">
-                        <input type="email" name="email" placeholder="E-mail">
-                        <input type="text" name="empresa" placeholder="Empresa">
-                        <input type="text" name="empresa" placeholder="N° de funcionários">
+                        <input type="email" name="email" placeholder="E-MAIL">
+                        <input type="text" name="empresa" placeholder="EMPRESA">
+                        <input type="text" name="empresa" placeholder="N° DE FUNCIONÁRIOS">
                     </div>
                 </div>
 
@@ -152,18 +165,18 @@
     
     <footer>
         <div class="global flex-row">
-            <div class="content-footer">
+            <div class="content-footer flex-1">
                 <img src="./assets/images/logo-bud-da-weme-footer.svg" alt="Logo BuD feito pela weme">
                 <p>Modelo e plataforma de desenho e engajamento com a estratégia</p>
             </div>
-            <div class="content-footer">
+            <div class="content-footer flex-1">
                 <p><a href="mailto:bud@weme.nu">bud@weme.nu</a></p>
                 <p><a href="tel:+551930458300">+55 19 3045-8300</p>
             </div>
-            <div class="content-footer">
+            <div class="content-footer flex-1">
                 <p><a href="https://goo.gl/maps/fBoiavN1AP2KDTmeA" target="_blank">Av. Dr. Jesuíno Marcondes Machado, 630 - Nova Campinas, Campinas - SP.</a></p>
             </div>
-            <div class="content-footer">
+            <div class="content-footer flex-1">
                 <a href="https://weme.com.br" target="_blank">
                     <img src="./assets/images/logo-weme.svg" alt="Logo da weme">
                 </a>
@@ -171,6 +184,12 @@
         </div>
     </footer>
 
+    <script src="./assets/js/menu.js"></script>
+
+
+    <!-- Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./assets/js/slider.js"></script>
 
 </body>
 </html>
