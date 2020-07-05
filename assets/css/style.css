@@ -99,7 +99,12 @@ header {
 
 #menu-script {
     display: none;
-    font-size:1.3em;
+    font-size:1.2em;
+    text-decoration: none;
+    color: #F5E94E;
+    padding-left: 10px;
+    text-align: left;
+    min-width: 90px;
 }
 
 #sub-info-head {

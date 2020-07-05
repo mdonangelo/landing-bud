@@ -13,10 +13,10 @@
     <meta property="og:title" content="BuD - Estratégia para novos tempos">
     <meta property="og:site_name" content="BuD">
     <meta property="og:description" content="Ajudamos empresas e times a evoluírem e conquistarem seus objetivos tornando a jornada da estratégia mais colaborativa, simples e prazerosa.">
-    <meta property="og:image" content="https://bud.weme.com.br/images/og-image.png">
+    <meta property="og:image" content="https://bud.weme.com.br/assets/images/og-image.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1920">
-    <meta property="og:image:height" content="1080">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
 
     <!-- METAS -->
     <meta name="description" content="Ajudamos empresas e times a evoluírem e conquistarem seus objetivos tornando a jornada da estratégia mais colaborativa, simples e prazerosa.">
@@ -27,12 +27,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25632384-23"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-25632384-23');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://bud.weme.com.br/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1887155,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
 </head>
 <body>
 
     <header>
         <div id="welcome-head" class="global flex-row vertical-center">
-            <img src="./assets/images/logo-bud-da-weme.svg" alt="Logo do BuD feito pela weme">
+            <div>
+                <a href="./">
+                    <img src="./assets/images/logo-bud-da-weme.svg" alt="Logo do BuD feito pela weme">
+                </a>
+            </div>
 
             <nav>
                 <a href="javascript:void(0);" id="menu-script"><i class="fas fa-stream"></i> Menu</a>
@@ -185,6 +211,7 @@
     </footer>
 
     <script src="./assets/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/869a698328.js" crossorigin="anonymous"></script>
 
 
     <!-- Slider -->
